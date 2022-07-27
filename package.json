@@ -1,0 +1,22 @@
+{
+  "name": "incluir_salud",
+  "version": "1.0.0",
+  "description": "Programa Incluir Salud Cordoba",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArielNieto1975/Incluir-Salud-UGP-Cordoba.git"
+  },
+  "author": "Ariel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArielNieto1975/Incluir-Salud-UGP-Cordoba/issues"
+  },
+  "homepage": "https://github.com/ArielNieto1975/Incluir-Salud-UGP-Cordoba#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
