@@ -9,17 +9,39 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="hprincipal">
+        <img src="./assets/wave-1.svg" />
+        <img src="./assets/wave-2.svg" />
+        <img src="./assets/wave-3.svg" />
+        <img src="./assets/wave-4.svg" />
+        <img src="./assets/wave-5.svg" id="shape" />
         <nav class="navbar">
             <div class="navbar__logo">INCLUIR SALUD<BR/>Córdoba</div>
             <ul class="navbar__accesos">
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="./pages//prestaciones.html">PRESTACIONES</a></li>
-                <li><a href="./pages/afiliados.html">AFILIADOS</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                <li class="navbar__accesos__link"><a href="./index.html">INICIO</a></li>
+                <li class="navbar__accesos__link">
+                    <a href="./pages/nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="navbar__accesos__link">
+                    <a href="./pages/prestaciones.html">PRESTACIONES</a>
+                </li>
+                <li class="navbar__accesos__link">
+                    <a href="">AFILIACIÓN</a>
+                    <ul>
+                        <li class="sub">
+                            <a class="sub" href="./pages/titular.html" titular>TITULAR</a>
+                        </li>
+                        <li class="sub">
+                            <a class="sub" href="./pages/familiar.html">FAMILIAR</a>
+                        </li>
+                    </ul>
+                </li>   
+                <li class="navbar__accesos__link">
+                    <a href="./pages/contacto.html">CONTACTO</a>
+                </li>
             </ul>
         </nav>
+      
     </header>
     <main class="container">
 

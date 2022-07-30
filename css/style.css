@@ -1,6 +1,59 @@
 header {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
+.hprincipal {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100vh;
+  background-color: blueviolet;
+  position: relative;
+  overflow: hidden; }
+
+#shape {
+  position: absolute;
+  left: 0;
+  bottom: -2vw;
+  opacity: 0.4; }
+
+img:not(#shape) {
+  position: absolute;
+  left: 0; }
+
+header img:nth-child(1) {
+  opacity: 0.4;
+  bottom: -0.1vw;
+  animation: move-1 5s infinite; }
+
+@keyframes move-1 {
+  50% {
+    transform: translateY(15px); } }
+
+header img:nth-child(2) {
+  opacity: 0.3;
+  bottom: 0.5vw;
+  animation: move-2 4s infinite; }
+
+@keyframes move-2 {
+  50% {
+    transform: translateY(35px); } }
+
+header img:nth-child(3) {
+  bottom: 0.3vw;
+  opacity: 0.2;
+  animation: move-3 3.5s infinite; }
+
+@keyframes move-3 {
+  50% {
+    transform: translateY(25px); } }
+
+header img:nth-child(4) {
+  bottom: 0.1vw;
+  opacity: 0.3;
+  animation: move-4 3s infinite; }
+
+@keyframes move-4 {
+  50% {
+    transform: translateY(20px); } }
+
 .navbar {
   background-color: blueviolet;
   color: #fff;
@@ -15,7 +68,7 @@ header {
   .navbar__accesos {
     display: flex; }
     .navbar__accesos li {
-      margin: 0 5px;
+      margin: 10px 5px;
       list-style: none;
       border: 1px solid;
       border-radius: 10px;
@@ -28,6 +81,26 @@ header {
       background: #fff; }
       .navbar__accesos :hover a {
         color: blueviolet; }
+    .navbar__accesos li ul {
+      display: none;
+      position: absolute;
+      min-width: 100px; }
+    .navbar__accesos li:hover > ul {
+      display: block;
+      background-color: transparent; }
+      .navbar__accesos li:hover > ul .sub {
+        background-color: blueviolet; }
+        .navbar__accesos li:hover > ul .sub :hover {
+          color: gray; }
+      .navbar__accesos li:hover > ul li a {
+        color: aliceblue; }
+    .navbar__accesos > li {
+      float: left; }
+
+.sub:hover {
+  background-color: grey; }
+  .sub:hover a {
+    color: blueviolet; }
 
 @media (max-width: 900px) {
   .navbar__accesos {
@@ -40,3 +113,8 @@ header {
 .container {
   background: linear-gradient(0deg, #edcbf6 0%, rgba(199, 127, 246, 0.776348) 100%);
   height: 100vh; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
