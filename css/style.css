@@ -1,12 +1,26 @@
 header {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
+.logo {
+  margin-left: 6vw;
+  margin-top: 5vh; }
+
 .hprincipal {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 100vh;
   background-color: blueviolet;
   position: relative;
   overflow: hidden; }
+  .hprincipal h1 {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 60%;
+    top: 50%;
+    font-size: 8vmin;
+    text-align: center;
+    color: #ffffff; }
 
 #shape {
   position: absolute;
@@ -64,7 +78,8 @@ header img:nth-child(4) {
     text-align: center;
     font-size: x-large;
     font-weight: bold;
-    padding: 20px 0; }
+    padding: 20px 0;
+    z-index: 100; }
   .navbar__accesos {
     display: flex; }
     .navbar__accesos li {
@@ -91,16 +106,36 @@ header img:nth-child(4) {
       .navbar__accesos li:hover > ul .sub {
         background-color: blueviolet; }
         .navbar__accesos li:hover > ul .sub :hover {
-          color: gray; }
+          color: #2f0b50; }
       .navbar__accesos li:hover > ul li a {
         color: aliceblue; }
     .navbar__accesos > li {
       float: left; }
-
-.sub:hover {
-  background-color: grey; }
-  .sub:hover a {
-    color: blueviolet; }
+  .navbar__accesos-movile {
+    display: none; }
+    .navbar__accesos-movile:hover > ul {
+      display: block; }
+      .navbar__accesos-movile:hover > ul li {
+        display: block; }
+    .navbar__accesos-movile i {
+      font-size: 35px; }
+    .navbar__accesos-movile ul {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0px;
+      padding-top: 70PX;
+      width: 100%;
+      background-color: #49117c;
+      z-index: 10; }
+      .navbar__accesos-movile ul li {
+        padding: 15px 0;
+        text-align: center; }
+        .navbar__accesos-movile ul li a {
+          color: #fff;
+          font-weight: bold;
+          font-size: larger;
+          text-decoration: none; }
 
 @media (max-width: 900px) {
   .navbar__accesos {
@@ -108,13 +143,40 @@ header img:nth-child(4) {
 
 @media (max-width: 767px) {
   .navbar__accesos {
-    display: none; } }
+    display: none; }
+  .navbar__accesos-movile {
+    display: block; } }
 
 .container {
-  background: linear-gradient(0deg, #edcbf6 0%, rgba(199, 127, 246, 0.776348) 100%);
-  height: 100vh; }
+  background: linear-gradient(0deg, #edcbf6 0%, rgba(199, 127, 246, 0.776348) 100%); }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+.contact {
+  padding: 50px 0; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 0 auto;
+    gap: 10px; }
+    .contact__form button {
+      background-color: blueviolet;
+      color: #fff;
+      font-weight: bold;
+      font-size: 120%;
+      border-radius: 10px;
+      width: fit-content;
+      padding: 10px 50px;
+      margin: auto; }
+      .contact__form button:hover {
+        cursor: pointer; }
+    .contact__form input, .contact__form textarea {
+      border-radius: 10px;
+      border: 1px solid blueviolet;
+      padding: 10px; }
+    .contact__form label {
+      font-weight: bold; }

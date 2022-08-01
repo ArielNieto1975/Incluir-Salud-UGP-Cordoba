@@ -1,13 +1,30 @@
 header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-// START WAVES
+// logo de incluir salud
+.logo {
+  margin-left: 6vw;
+  margin-top: 5vh;
+}
+// START header con WAVES (en index)
 .hprincipal{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100vh;
     background-color: $colordark;
     position: relative;
     overflow: hidden;
+    // estilos del texto del header
+    & h1 {
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 60%;
+      top: 50%;
+      font-size: 8vmin;
+      text-align: center;
+      color: #ffffff;
+    }
 }
 #shape {
     position: absolute;
@@ -72,6 +89,7 @@ header{
       font-size: x-large;
       font-weight: bold;
       padding: 20px 0;
+      z-index: 100;
   }
   &__accesos{
     display: flex;
@@ -93,7 +111,6 @@ header{
         color: $colordark;
       }            
     }
-
     & li ul{
       display: none;
       position: absolute;
@@ -105,7 +122,7 @@ header{
         .sub {
           background-color: $colordark;
           :hover{
-              color: gray;
+              color: darken($color: $colordark, $amount: 35%);
           }
         }
         & li{
@@ -119,14 +136,44 @@ header{
         float: left;
     }
   }
+  // movile
+  &__accesos-movile {
+    display: none;
+    &:hover > ul {
+      display: block;
+      li {
+        display: block;
+      }
+    }
+
+    i {
+      font-size: 35px;
+      
+    }
+    ul {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0px;
+      padding-top: 70PX;
+      width: 100%;      
+      background-color: darken($color: $colordark, $amount: 25%) ;
+      z-index: 10;
+      li {
+        padding: 15px 0;
+        text-align: center;
+        a {
+          color: $colorlirghter;
+          font-weight: bold;
+          font-size: larger;
+          text-decoration: none;
+        }
+      }
+    }
+    
+  }
 }
-.sub:hover{
-  background-color: grey;
-  & a{
-    color: $colordark;
-  } 
-  
-}
+
 
 @media (max-width:900px){
     .navbar__accesos{
@@ -136,5 +183,8 @@ header{
 @media (max-width:767px){
     .navbar__accesos{
         display: none;
+    }
+    .navbar__accesos-movile {
+      display: block;
     }
 }
