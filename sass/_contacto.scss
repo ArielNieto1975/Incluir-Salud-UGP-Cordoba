@@ -1,5 +1,8 @@
 .contact {   
-    padding: 50px 0;
+    padding: 50px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     &__form {
         display: flex;
         flex-direction: column;
@@ -27,6 +30,13 @@
         & label {
             font-weight: bold;
         }
+       
+    }
+    & iframe {
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 39px 72px darken($color: $colordark, $amount: 25%)  ; 
+
     }
     
 }
