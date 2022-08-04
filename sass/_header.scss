@@ -17,16 +17,34 @@ header{
     & h1 {
       width: 100%;
       font-family: "Poppins", sans-serif;
-      position: absolute;
+      // position: absolute;
       // transform: translate(-50%, -50%);
       // left: 60%;
       // top: 50%;
       top: 20%;
+      margin-top: 50px;
       padding: 0 50px;
       font-size: 8vmin;
       text-align: center;
       color: #ffffff;
     }
+    & h2 {
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      // position: absolute;
+      // transform: translate(-50%, -50%);
+      // left: 60%;
+      // top: 50%;
+      top: 35%;
+      padding: 20px 50px;
+      font-size: 6vmin;
+      text-align: center;
+      color: #ffffff;
+    }
+}
+.message{
+  display: flex;
+  flex-direction: column;
 }
 #shape {
     position: absolute;
@@ -189,4 +207,12 @@ header{
     .navbar__accesos-movile {
       display: block;
     }
+}
+@media (max-width:600px){
+  .hprincipal{
+    & h1 {
+      margin-top: 10px;
+    }
+  } 
+  
 }

@@ -59,7 +59,8 @@
     </header>
     <main class="container">
         <section class="contact">
-            <form action="" class="contact__form">
+            <form class="contact__form" action="https://formspree.io/f/xeqdjrnv"
+            method="POST">
                 <label for="name">Nombre y Apellido</label>
                 <input type="text" id="name" name="name" placeholder="ingrese su nombre...">
                 <label for="dni">D.N.I.</label> 
@@ -69,19 +70,24 @@
                 <label for="telefono">Teléfono</label>
                 <input type="tel" id="telefono" name="telefono" placeholder="ingrese su N° de telefono...">
                 <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" placeholder="Email..."/>
+                <input type="email" id="correo" name="email" placeholder="Email..."/>
                 <label for="consulta">Ingrese su mensaje:</label>
-                <textarea name="consulta" id="consulta" cols="10" rows="10" placeholder="Consulta..."></textarea>
-                <button type="submit">Enviar</button>
+                <textarea name="message" id="consulta" cols="10" rows="10" placeholder="Consulta..."></textarea>
+                <input type="submit" value="Enviar" class="contact__form__cta">
+                <!-- <button type="submit">Enviar</button> -->
             </form>
             <section class="contact__location">
-                <ul>
-                    <li>Av. Velez Sarsfield N° 2311</li>
-                    <li>Complejo Pablo Pizzurno</li>
-                    <li>CP. 5000 - Córdoba - Argentina</li>
-                    <li>Atención 8008-999-9999</li>
-                    <li>info@includehealthprogram.com</li>
-                </ul>
+                <address>
+                    <ul>
+                        <li>Av. Velez Sarsfield N° 2311</li>
+                        <li>Ex Complejo Pablo Pizzurno</li>
+                        <li>Ministerio de Salud</li>
+                        <li>Area Marrón</li>
+                        <li>Atención 8008-999-9999</li>
+                        <li>info@includehealthprogram.com</li>
+                    </ul>
+                </address>
+                
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.904725983127!2d-64.19725305964839!3d-31.442320501413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a258c0895609%3A0x65d38e92aaf10518!2sMinisterio%20de%20Salud%20Gobierno%20de%20La%20Provincia%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1659401000099!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             
