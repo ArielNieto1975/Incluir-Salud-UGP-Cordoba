@@ -268,7 +268,7 @@ a {
   gap: 20px;
   padding-bottom: 50px; }
   .disca__seccion {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     display: grid;
     grid-template-rows: 1fr;
     align-items: center;
@@ -289,7 +289,7 @@ a {
       height: 30%;
       border-radius: 10px; }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .disca {
     grid-template-columns: repeat(2, 1fr); } }
 

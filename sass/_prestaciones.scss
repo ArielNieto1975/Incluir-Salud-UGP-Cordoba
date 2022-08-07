@@ -17,7 +17,7 @@
     padding-bottom: 50px;
     
     &__seccion {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         // padding: 20px;
         display: grid;
         // grid-template-columns: 1fr;
@@ -48,7 +48,7 @@
     }
     
 }
-@media (max-width:1300px) {
+@media (max-width:1200px) {
     .disca{
         grid-template-columns: repeat(2, 1fr);
     }
