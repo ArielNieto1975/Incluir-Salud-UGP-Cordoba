@@ -175,10 +175,27 @@ header img:nth-child(4) {
     padding-bottom: 30px;
     text-align: justify;
     line-height: 1.5; }
+  .informacion__video {
+    width: 80vw;
+    text-align: center; }
+  .informacion iframe {
+    border-radius: 10px;
+    box-shadow: 1px 9px 70px #49117c; }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .informacion {
+    font-size: 1em; }
+    .informacion iframe {
+      width: 70vw;
+      height: 40vh; } }
+
+@media (max-width: 700px) and (orientation: landscape) {
   .informacion {
     font-size: 1em; } }
+
+@media (max-width: 700px) {
+  .informacion ul {
+    padding-left: 10px; } }
 
 * {
   padding: 0;
