@@ -87,10 +87,19 @@ header img:nth-child(4) {
   align-items: center; }
   .navbar__logo {
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
     padding: 20px 0;
-    z-index: 100; }
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px; }
+    .navbar__logo img {
+      position: relative !important;
+      animation: none !important;
+      opacity: 1 !important; }
   .navbar__accesos {
     display: flex; }
     .navbar__accesos li {
@@ -150,7 +159,9 @@ header img:nth-child(4) {
 
 @media (max-width: 900px) {
   .navbar__accesos {
-    font-size: small; } }
+    font-size: small; }
+  .navbar__logo {
+    font-size: x-large; } }
 
 @media (max-width: 767px) {
   .navbar__accesos {

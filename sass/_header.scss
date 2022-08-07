@@ -106,10 +106,20 @@ header{
   align-items: center;
   &__logo{
       text-align: center;
-      font-size: x-large;
+      font-size: xx-large;
       font-weight: bold;
       padding: 20px 0;
       z-index: 100;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      & img {
+        position: relative !important;
+        animation: none !important;  
+        opacity: 1 !important;      
+      }
   }
   &__accesos{
     display: flex;
@@ -196,8 +206,13 @@ header{
 
 
 @media (max-width:900px){
-    .navbar__accesos{
+    .navbar {
+      &__accesos{
         font-size: small;
+      }
+      &__logo {
+        font-size: x-large;
+      }
     }
 }
 @media (max-width:767px){
