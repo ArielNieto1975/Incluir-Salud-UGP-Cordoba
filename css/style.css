@@ -295,15 +295,15 @@ a {
 
 @media (max-width: 900px) {
   .disca__seccion {
-    font-size: 2rem; } }
+    font-size: 1.9rem; } }
 
 @media (max-width: 750px) {
   .disca__seccion {
-    font-size: 1.7rem; } }
+    font-size: 1.5rem; } }
 
 @media (max-width: 650px) {
   .disca__seccion {
-    font-size: 1.3rem; }
+    font-size: 1.1rem; }
   .tituloarea {
     font-size: 2.3rem; } }
 
