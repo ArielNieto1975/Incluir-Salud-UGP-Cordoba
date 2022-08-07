@@ -111,7 +111,8 @@
     }
     .presta{
         &__disca, &__medica {
-            font-size: 1rem;
+            width: 60%;
+            height: 60%;
         }
     }
 }
@@ -135,6 +136,13 @@
     
     .tituloarea{
         font-size: 1.75rem;
+    }
+    .presta{
+        &__disca, &__medica {
+            width: 80%;
+            height: 80%;
+            font-size: 1.5rem;
+        }
     }
 }
 @media (max-width:350px) {
