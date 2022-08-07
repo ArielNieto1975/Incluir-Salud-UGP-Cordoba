@@ -6,6 +6,7 @@
     width: 95vw;
     margin: 0 auto;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 .disca{
     width: 95vw;
@@ -48,6 +49,43 @@
     }
     
 }
+
+.presta {
+    width: 95vw;
+    // height: calc(100vh - 96px);
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+    text-align: center;
+    &__disca, &__medica {
+        font-family: 'Kanit', sans-serif;
+        font-size: 2em;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), grey);
+        width: 40%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        
+        
+        & a {
+            color: $colorlirghter;
+        }
+        & img {
+            margin-top: 20px;
+            width: 40%;
+            position: relative !important;
+            height: 50%;
+        }
+    }
+}
+
+
 @media (max-width:1200px) {
     .disca{
         grid-template-columns: repeat(2, 1fr);
@@ -70,6 +108,11 @@
     }
     .tituloarea{
         font-size: 2.3rem;
+    }
+    .presta{
+        &__disca, &__medica {
+            font-size: 1rem;
+        }
     }
 }
 
