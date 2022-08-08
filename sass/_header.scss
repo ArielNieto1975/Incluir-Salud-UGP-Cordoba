@@ -10,7 +10,8 @@ header{
 .hprincipal{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100vh;
-    background-color: $colordark;
+    // background-color: $colordark;
+    background: linear-gradient(0deg, rgba(199, 103, 243, 0.5) 0%, rgba(138, 43, 226, 1) 100%);
     position: relative;
     overflow: hidden;
     // estilos del texto del header
