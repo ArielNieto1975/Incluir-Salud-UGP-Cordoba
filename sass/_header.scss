@@ -17,6 +17,7 @@ header{
     // estilos del texto del header
     & h1 {
       width: 100%;
+      text-shadow: 1px 1px 5px black;
       font-family: "Poppins", sans-serif;
       // position: absolute;
       // transform: translate(-50%, -50%);
@@ -31,6 +32,7 @@ header{
     }
     & h2 {
       width: 100%;
+      text-shadow: 1px 1px 5px black;
       font-family: "Poppins", sans-serif;
       // position: absolute;
       // transform: translate(-50%, -50%);
@@ -217,6 +219,15 @@ header{
     }
 }
 @media (max-width:767px){
+    .hprincipal{
+      & h1 {
+        font-size: 7vmin;
+      }
+      & h2 {
+        font-size: 5vmin;
+      }
+      
+    }
     .navbar__accesos{
         display: none;
     }

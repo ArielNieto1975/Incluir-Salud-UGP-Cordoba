@@ -13,6 +13,7 @@ header {
   overflow: hidden; }
   .hprincipal h1 {
     width: 100%;
+    text-shadow: 1px 1px 5px black;
     font-family: "Poppins", sans-serif;
     top: 20%;
     margin-top: 50px;
@@ -22,6 +23,7 @@ header {
     color: #ffffff; }
   .hprincipal h2 {
     width: 100%;
+    text-shadow: 1px 1px 5px black;
     font-family: "Poppins", sans-serif;
     top: 35%;
     padding: 20px 50px;
@@ -164,6 +166,10 @@ header img:nth-child(4) {
     font-size: x-large; } }
 
 @media (max-width: 767px) {
+  .hprincipal h1 {
+    font-size: 7vmin; }
+  .hprincipal h2 {
+    font-size: 5vmin; }
   .navbar__accesos {
     display: none; }
   .navbar__accesos-movile {
@@ -177,7 +183,7 @@ header img:nth-child(4) {
   width: 80vw;
   margin: 0 auto;
   padding: 30px 0;
-  font-size: 1.5em; }
+  font-size: 1.3em; }
   .informacion h1 {
     text-align: justify;
     padding-bottom: 20px; }
@@ -191,7 +197,7 @@ header img:nth-child(4) {
     text-align: center; }
   .informacion iframe {
     border-radius: 10px;
-    box-shadow: 1px 9px 70px #49117c; }
+    box-shadow: 10px 9px 7px #49117c; }
 
 @media (max-width: 700px) {
   .informacion {
