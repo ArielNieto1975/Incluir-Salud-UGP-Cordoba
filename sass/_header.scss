@@ -28,7 +28,7 @@ header{
       padding: 0 50px;
       font-size: 8vmin;
       text-align: center;
-      color: #ffffff;
+      color: $colorlirghter;
     }
     & h2 {
       width: 100%;
@@ -42,7 +42,7 @@ header{
       padding: 20px 50px;
       font-size: 6vmin;
       text-align: center;
-      color: #ffffff;
+      color: $colorlirghter;
     }
 }
 .message{
@@ -160,7 +160,7 @@ header{
         }
         & li{
             & a{
-              color: aliceblue;
+              color: $colorlirghter;
 
             }
         }

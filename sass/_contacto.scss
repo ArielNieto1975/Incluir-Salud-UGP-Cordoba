@@ -35,8 +35,6 @@
             font-weight: bold;
             font-size: 120%;
         }
-        
-
         &__cta{
             background-color: $colordark;
             color: $colorlirghter;
@@ -51,7 +49,6 @@
                 cursor: pointer;
             }
         }
-       
     }
     
     &__location {
@@ -65,7 +62,6 @@
             margin-top: 20px;
             border-radius: 10px;
             box-shadow: 1px 9px 70px darken($color: $colordark, $amount: 25%)  ; 
-    
         }
         
         & li {
@@ -84,8 +80,6 @@
         & input, textarea, label {
             font-size: 100%;
         }
-        
-
     }   
     
     .contact__location  {
@@ -105,8 +99,6 @@
         & input, textarea, label {
             font-size: 80%;
         }
-        
-
     }   
     
     .contact__location  {

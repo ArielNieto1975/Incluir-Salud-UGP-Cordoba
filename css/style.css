@@ -20,7 +20,7 @@ header {
     padding: 0 50px;
     font-size: 8vmin;
     text-align: center;
-    color: #ffffff; }
+    color: #fff; }
   .hprincipal h2 {
     width: 100%;
     text-shadow: 1px 1px 5px black;
@@ -29,7 +29,7 @@ header {
     padding: 20px 50px;
     font-size: 6vmin;
     text-align: center;
-    color: #ffffff; }
+    color: #fff; }
 
 .message {
   display: flex;
@@ -130,7 +130,7 @@ header img:nth-child(4) {
         .navbar__accesos li:hover > ul .sub :hover {
           color: #2f0b50; }
       .navbar__accesos li:hover > ul li a {
-        color: aliceblue; }
+        color: #fff; }
     .navbar__accesos > li {
       float: left; }
   .navbar__accesos-movile {
@@ -197,7 +197,7 @@ header img:nth-child(4) {
     text-align: center; }
   .informacion iframe {
     border-radius: 10px;
-    box-shadow: 10px 9px 7px #49117c; }
+    box-shadow: 10px 9px 7px blueviolet; }
 
 @media (max-width: 700px) {
   .informacion {
@@ -341,6 +341,10 @@ a {
       position: relative !important;
       height: 30%;
       border-radius: 10px; }
+    .disca__seccion:hover {
+      transform: scale(0.95, 0.95);
+      transition: all .5s;
+      box-shadow: 5px 5px 25px blueviolet; }
 
 .presta {
   width: 95vw;
