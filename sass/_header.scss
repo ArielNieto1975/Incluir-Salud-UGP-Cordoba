@@ -48,7 +48,16 @@ header{
 .message{
   display: flex;
   flex-direction: column;
+  & div {
+    // height: calc(100vh - 550px);
+    & img {
+      width: 30%;
+      margin: 0 38vw;
+      display: none;
+    }
+  }
 }
+
 #shape {
     position: absolute;
     left: 0;
@@ -241,7 +250,9 @@ header{
       margin-top: 20px;
     }
   }
-  
+  .message div img {
+    display: block;
+  }
 }
 @media (max-width:500px) {
   .message {
