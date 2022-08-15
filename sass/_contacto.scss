@@ -5,6 +5,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    &__head {
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: 1.8em;
+    }
     &__form {
         display: flex;
         flex-direction: column;
@@ -45,7 +50,7 @@
             border: 1px solid  $colordark;
             width: fit-content;
             padding: 10px 50px !important;
-            margin: 30px auto;
+            margin: 10px auto;
             &:hover {
                 cursor: pointer;
             }
@@ -53,7 +58,7 @@
     }
     
     &__location {
-        margin-top: 30px;
+        margin-top: 20px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -77,21 +82,29 @@
     
 }
 @media (max-width:550px) {
-    .contact__form{
-        & input, textarea, label {
-            font-size: 100%;
+    .contact {
+        padding: 30px 10px;
+        &__form{
+            & input, textarea, label {
+                font-size: 100%;
+                &__cta {
+                    margin-bottom: 10px;
+                }
+            }
         }
+        &__location  {
+            & ul li{
+                font-size: 100%;
+            }
+            & iframe {
+                width: 270px;
+                height: 200px;
+            }
+        } 
+        &__head {
+            font-size: 1.1em;
+        }  
     }   
-    
-    .contact__location  {
-        & ul li{
-            font-size: 100%;
-        }
-        & iframe {
-            width: 270px;
-            height: 200px;
-        }
-    }
     
 }
 

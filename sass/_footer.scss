@@ -17,6 +17,32 @@
         }
     }
 }
+.textwidget {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: $darkfooter;
+    color: $lightfooter;
+    & p {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 50px;
+        & a {
+            display: flex;
+            align-items: center;
+            color: $lightfooter;
+            padding: 5px;
+        }
+        & img {
+            width: 40px;
+            padding: inherit;
+            border-radius: 50px;
+        }
+    }
+    
+}
 @media (max-width:600px) {
     .footer__expte a {
         font-size: 10px ;

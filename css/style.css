@@ -82,7 +82,7 @@ header img:nth-child(4) {
     transform: translateY(20px); } }
 
 .navbar {
-  background-color: blueviolet;
+  background-color: #8a2be2;
   color: #fff;
   display: flex;
   justify-content: space-around;
@@ -117,7 +117,7 @@ header img:nth-child(4) {
     .navbar__accesos :hover {
       background: #fff; }
       .navbar__accesos :hover a {
-        color: blueviolet; }
+        color: #8a2be2; }
     .navbar__accesos li ul {
       display: none;
       position: absolute;
@@ -126,7 +126,7 @@ header img:nth-child(4) {
       display: block;
       background-color: transparent; }
       .navbar__accesos li:hover > ul .sub {
-        background-color: blueviolet; }
+        background-color: #8a2be2; }
         .navbar__accesos li:hover > ul .sub :hover {
           color: #2f0b50; }
       .navbar__accesos li:hover > ul li a {
@@ -196,7 +196,7 @@ header img:nth-child(4) {
     text-align: center; }
   .informacion iframe {
     border-radius: 10px;
-    box-shadow: 10px 9px 7px blueviolet; }
+    box-shadow: 10px 9px 7px #8a2be2; }
 
 @media (max-width: 700px) {
   .informacion {
@@ -235,6 +235,10 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center; }
+  .contact__head {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.8em; }
   .contact__form {
     display: flex;
     flex-direction: column;
@@ -244,7 +248,7 @@ a {
     gap: 10px; }
     .contact__form input, .contact__form textarea {
       border-radius: 10px;
-      border: 1px solid blueviolet;
+      border: 1px solid #8a2be2;
       padding: 10px;
       font-size: 120%;
       text-transform: uppercase; }
@@ -252,19 +256,19 @@ a {
       font-weight: bold;
       font-size: 120%; }
     .contact__form__cta {
-      background-color: blueviolet;
+      background-color: #8a2be2;
       color: #fff;
       font-weight: bold;
       font-size: 120%;
       border-radius: 10px;
-      border: 1px solid blueviolet;
+      border: 1px solid #8a2be2;
       width: fit-content;
       padding: 10px 50px !important;
-      margin: 30px auto; }
+      margin: 10px auto; }
       .contact__form__cta:hover {
         cursor: pointer; }
   .contact__location {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -283,13 +287,19 @@ a {
       text-shadow: 1px 9px 10px #49117c; }
 
 @media (max-width: 550px) {
-  .contact__form input, .contact__form textarea, .contact__form label {
-    font-size: 100%; }
-  .contact__location ul li {
-    font-size: 100%; }
-  .contact__location iframe {
-    width: 270px;
-    height: 200px; } }
+  .contact {
+    padding: 30px 10px; }
+    .contact__form input, .contact__form textarea, .contact__form label {
+      font-size: 100%; }
+      .contact__form input__cta, .contact__form textarea__cta, .contact__form label__cta {
+        margin-bottom: 10px; }
+    .contact__location ul li {
+      font-size: 100%; }
+    .contact__location iframe {
+      width: 270px;
+      height: 200px; }
+    .contact__head {
+      font-size: 1.1em; } }
 
 @media (max-width: 425px) {
   .contact__form input, .contact__form textarea, .contact__form label {
@@ -303,7 +313,19 @@ a {
 .afilia {
   width: 80vw;
   margin: 0 auto;
-  padding-top: 50px; }
+  padding: 30px 0;
+  font-size: 1.3em;
+  text-align: justify; }
+  .afilia ul, .afilia ol {
+    padding-left: 40px; }
+
+@media (max-width: 600px) {
+  .afilia {
+    text-align: left;
+    font-size: 1em;
+    padding: 30px 0; }
+    .afilia ul, .afilia ol {
+      padding-left: 20px; } }
 
 .tituloarea {
   padding: 30px;
@@ -347,7 +369,7 @@ a {
     .disca__seccion:hover {
       transform: scale(0.95, 0.95);
       transition: all .5s;
-      box-shadow: 5px 5px 25px blueviolet; }
+      box-shadow: 5px 5px 25px #8a2be2; }
 
 .presta {
   width: 95vw;
@@ -433,6 +455,28 @@ a {
       .footer__expte a img {
         width: 15%;
         padding-left: 5px; }
+
+.textwidget {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  color: #ffd; }
+  .textwidget p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 50px; }
+    .textwidget p a {
+      display: flex;
+      align-items: center;
+      color: #ffd;
+      padding: 5px; }
+    .textwidget p img {
+      width: 40px;
+      padding: inherit;
+      border-radius: 50px; }
 
 @media (max-width: 600px) {
   .footer__expte a {
