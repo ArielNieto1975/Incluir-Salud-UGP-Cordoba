@@ -177,7 +177,11 @@ header img:nth-child(4) {
 
 @media (max-width: 600px) {
   .hprincipal h1 {
-    margin-top: 10px; } }
+    margin-top: 20px; } }
+
+@media (max-width: 500px) {
+  .message {
+    line-height: 200%; } }
 
 .informacion {
   width: 80vw;
