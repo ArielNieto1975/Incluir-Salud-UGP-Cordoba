@@ -8,6 +8,7 @@
     &__form {
         display: flex;
         flex-direction: column;
+        max-width: 800px;
         width: 70vw;
         margin: 0 auto;
         gap: 10px;

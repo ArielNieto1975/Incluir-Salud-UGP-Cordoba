@@ -1,0 +1,29 @@
+.footer {
+    background-color: $darkfooter;
+    padding: 15px;
+    &__expte{
+        display: flex;
+        justify-content: center;
+        & a {
+            max-width: 450px;
+            display: flex;      
+            font-size: 20px;    
+            color: $lightfooter;
+            font-weight: bold;
+            & img {
+                width: 15%;
+                padding-left: 5px;            
+            }   
+        }
+    }
+}
+@media (max-width:600px) {
+    .footer__expte a {
+        font-size: 10px ;
+        width: 250px;
+        align-items: center;
+        & img {
+            width: 25%;
+        }
+    }
+}
